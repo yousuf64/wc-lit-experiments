@@ -1,0 +1,29 @@
+{
+  "name": "wc-lit-experiments",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@spectrum-web-components/accordion": "^1.0.0",
+    "@spectrum-web-components/alert-dialog": "^1.0.0",
+    "@spectrum-web-components/button": "^1.0.0",
+    "@spectrum-web-components/button-group": "^1.0.0",
+    "@spectrum-web-components/checkbox": "^1.0.0",
+    "@spectrum-web-components/dialog": "^1.0.0",
+    "@spectrum-web-components/divider": "^1.0.0",
+    "@spectrum-web-components/field-group": "^1.0.0",
+    "@spectrum-web-components/overlay": "^1.0.0",
+    "@spectrum-web-components/reactive-controllers": "^1.0.0",
+    "@spectrum-web-components/theme": "^1.0.0",
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10"
+  }
+}

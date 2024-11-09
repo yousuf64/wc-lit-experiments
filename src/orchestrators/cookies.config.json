@@ -1,0 +1,55 @@
+[
+  {
+    "trigger": {
+      "path": "/"
+    },
+    "entries": [
+      {
+        "type": "Strictly Necessary",
+        "policies": [
+          {
+            "name": "Policy #1",
+            "default": true,
+            "description": "This is a description of Policy #1"
+          },
+          {
+            "name": "Policy #2",
+            "description": "This is a description of Policy #2"
+          },
+          {
+            "name": "Policy #3",
+            "description": "This is a description of Policy #3"
+          }
+        ]
+      },
+      {
+        "type": "Performance and Analytics",
+        "policies": [
+          {
+            "name": "Policy #4",
+            "default": true,
+            "description": "This is a description of Policy #4"
+          },
+          {
+            "name": "Policy #5",
+            "description": "This is a description of Policy #5"
+          }
+        ]
+      },
+      {
+        "type": "YouTube",
+        "policies": [
+          {
+            "name": "Policy #6",
+            "default": true,
+            "description": "This is a description of Policy #6"
+          },
+          {
+            "name": "Policy #7",
+            "description": "This is a description of Policy #7"
+          }
+        ]
+      }
+    ]
+  }
+]

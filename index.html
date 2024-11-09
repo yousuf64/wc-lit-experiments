@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit + TS</title>
+    <link rel="stylesheet" href="./src/index.css" />
+
+    <!-- SWC imports -->
+    <script type="module">
+      import '@spectrum-web-components/styles/typography.css';
+      import '@spectrum-web-components/theme/express/theme-light.js';
+      import '@spectrum-web-components/theme/express/scale-medium.js';
+      import '@spectrum-web-components/theme/sp-theme.js';
+
+      import '@spectrum-web-components/button/sp-button.js';
+      import '@spectrum-web-components/button/sp-clear-button.js';
+      import '@spectrum-web-components/button/sp-close-button.js';
+      import '@spectrum-web-components/button-group/sp-button-group.js';
+      import '@spectrum-web-components/alert-dialog/sp-alert-dialog.js';
+      import '@spectrum-web-components/divider/sp-divider.js';
+      import '@spectrum-web-components/accordion/sp-accordion.js';
+      import '@spectrum-web-components/accordion/sp-accordion-item.js';
+      import '@spectrum-web-components/field-group/sp-field-group.js';
+      import '@spectrum-web-components/checkbox/sp-checkbox.js';
+      import '@spectrum-web-components/overlay/sp-overlay.js';
+      import '@spectrum-web-components/dialog/sp-dialog-wrapper.js';
+    </script>
+
+    <script type="module" src="/src/components/cookies.ts"></script>
+    <script type="module" src="/src/orchestrators/cookies-orchestrator.ts"></script>
+
+    <script>
+
+    </script>
+  </head>
+  <body>
+    <sp-theme system="express" scale="medium" color="light">
+      <div id="host"></div>
+<!--      <pl-cookies></pl-cookies>-->
+
+    </sp-theme>
+
+<!--    <my-element>-->
+<!--      <h1>Vite + Lit</h1>-->
+<!--    </my-element>-->
+  </body>
+</html>
