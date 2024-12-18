@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "title": "Task 1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id autem dolorum rerum quasi mollitia repellat, alias ut. Ducimus neque sint beatae hic debitis, unde quis accusamus ea fugiat commodi?",
+      "ctaText": "Button CTA",
+      "secondaryCtaText": "Button CTA",
+      "isChecked": true,
+      "isExpanded": true
+    },
+    {
+      "id": 2,
+      "title": "Task 2",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id autem dolorum rerum quasi mollitia repellat, alias ut. Ducimus neque sint beatae hic debitis, unde quis accusamus ea fugiat commodi?",
+      "ctaText": "Button CTA"
+    },
+    {
+      "id": 3,
+      "title": "Task 3",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id autem dolorum rerum quasi mollitia repellat, alias ut. Ducimus neque sint beatae hic debitis, unde quis accusamus ea fugiat commodi?",
+      "ctaText": "Button CTA",
+      "secondaryCtaText": "Button CTA"
+    }
+  ]
+  
