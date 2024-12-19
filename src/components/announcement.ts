@@ -5,19 +5,79 @@ import { Dialog } from './dialog';
 @customElement('announcement-component')
 export class AnnouncementPlugin extends Dialog {
 
-    @property({ type: Number }) 
-    time = 5000;
+  @property({ type: Number })
+  time = 5000;
 
-    @property({ type: String })
-    title = '';
-    content = '';
-    SecondarybuttonText = '';
-    PrimarybuttonText = '';
+  @property({ type: String })
+  title = '';
+  content = '';
+  SecondarybuttonText = '';
+  PrimarybuttonText = '';
 
-    @state()
-    ShowDOM = true;
+  @state()
+  ShowDOM = true;
 
-    static styles = css`
+  async onButtonClick(eventName: string): Promise<void> {
+    this.dispatchEvent(new CustomEvent(eventName, {
+      bubbles: true,
+      composed: true,
+      detail: {}
+    }));
+  }
+
+  renderDialog() {
+    return this.ShowDOM ? html`
+    <div class = "mainContainer">
+      <div class="header">
+        <span>${this.title}</span>
+      </div>
+
+      <div class="content">
+       ${this.content}
+      </div>
+      
+      <div class="container">
+      </div>
+
+      <div class="button-section">
+        <button class="secondary" @click=${() => this.onButtonClick('primary-button-click')}>${this.PrimarybuttonText}</button>
+        <button class="primary" @click=${() => this.onButtonClick('secondary-button-click')}>${this.SecondarybuttonText}</button>
+      </div>
+      </div>
+    ` : html``
+  }
+
+  static styles = css`
+  .checklist-close {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: none;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+  }
+  
+  .checklist-close::before, .checklist-close::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #32363e;
+      border-radius: 4px;
+  }
+  
+  .checklist-close::before {
+      transform: rotate(45deg);
+  }
+  
+  .checklist-close::after {
+      transform: rotate(-45deg);
+  }
+  
     .mainContainer {
       width: 350px;
       margin: 0 auto;
@@ -96,35 +156,6 @@ export class AnnouncementPlugin extends Dialog {
     }
   `
 
-  async onButtonClick(eventName: string): Promise<void> {
-    this.dispatchEvent(new CustomEvent(eventName, {
-      bubbles: true,
-      composed: true,
-      detail: {}
-    }));
-  }
-
-  renderDialog() {
-    return this.ShowDOM ? html`
-    <div class = "mainContainer">
-      <div class="header">
-        <span>${this.title}</span>
-      </div>
-
-      <div class="content">
-       ${this.content}
-      </div>
-      
-      <div class="container">
-      </div>
-
-      <div class="button-section">
-        <button class="secondary" @click=${() => this.onButtonClick('primary-button-click')}>${this.PrimarybuttonText}</button>
-        <button class="primary" @click=${() => this.onButtonClick('secondary-button-click')}>${this.SecondarybuttonText}</button>
-      </div>
-      </div>
-    ` : html``
-  }
 }
 
 declare global {
