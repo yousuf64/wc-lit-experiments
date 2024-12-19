@@ -1,7 +1,6 @@
 import { AnnouncementPlugin } from '../components/announcement';
 import config from './announcement.config.json';
 
-// Function to show the announcement with optional overrides
 export function showAnnouncement(
     title: string = config.title,
     content: string = config.content,
@@ -21,14 +20,13 @@ export function showAnnouncement(
     announcement.addEventListener('primary-button-click', (event: Event) => {
         const customEvent = event as CustomEvent;
         console.log(customEvent.detail.message);
-        // Add your custom logic for primary button click here
+      
         alert('Primary button clicked');
     });
 
     announcement.addEventListener('secondary-button-click', (event: Event) => {
         const customEvent = event as CustomEvent;
         console.log(customEvent.detail.message);
-        // Add your custom logic for secondary button click here
 
         alert('Secondary button clicked');
     });
