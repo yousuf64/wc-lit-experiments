@@ -1,0 +1,76 @@
+{
+    "pricing": [
+        {
+            "title": "Business",
+            "data": [
+                {
+                    "description": "Lorem ipsum dolor sit amet, adipi dolor sit amet, adipi dolor sit amet dolor sit amet dolor sit amet",
+                    "price": "$100",
+                    "priceSub": "/mo billed annually",
+                    "btnText": "Start Your 7-Day Free Trial"
+                }
+            ],
+            "feature": [
+                {
+                    "title": "Everything in Free, and:",
+                    "list": [
+                        "Unlimited Features",
+                        "Custom Templete",
+                        "Workflows",
+                        "Dedicateed success manager",
+                        "API access",
+                        "Advance admin analytics"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Teams",
+            "data": [
+                {
+                    "description": "Lorem ipsum dolor sit amet, adipi dolor sit amet, adipi dolor sit amet dolor sit amet dolor sit amet",
+                    "price": "$80",
+                    "priceSub": "/mo billed annually",
+                    "btnText": "Start Your 7-Day Free Trial"
+                }
+            ],
+            "feature": [
+                {
+                    "title": "Everything in Free, and:",
+                    "list": [
+                        "Unlimited Features",
+                        "Custom Templete",
+                        "Workflows",  
+                        "Dedicateed success manager",
+                        "API access",
+                        "Advance admin analytics"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Creators",
+            "data": [
+                {
+                    "description": "Lorem ipsum dolor sit amet, adipi dolor sit amet, adipi dolor sit amet dolor sit amet dolor sit amet",
+                    "price": "$50",
+                    "priceSub": "/mo billed annually",
+                    "btnText": "Start Your 7-Day Free Trial"
+                }
+            ],
+            "feature": [
+                {
+                    "title": "Everything in Free, and:",
+                    "list": [
+                        "Unlimited Features",
+                        "Custom Templete",
+                        "Workflows",
+                        "Dedicateed success manager",
+                        "API access",
+                        "Advance admin analytics"
+                    ]
+                }
+            ]
+        }
+    ]
+}
